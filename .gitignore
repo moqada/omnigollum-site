@@ -1,0 +1,5 @@
+*.swp
+tmp
+log
+ldap.yaml
+gollum.yaml

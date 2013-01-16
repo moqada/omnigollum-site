@@ -1,0 +1,3 @@
+gollum_path: /home/gollum/gollum/lib
+omnigollum_path: /home/gollum/omnigollum/lib
+base_path: /home/gollum/wiki
