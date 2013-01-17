@@ -1,18 +1,38 @@
-# omniauth / LDAP / gollum の雛形
+# omnigollum の雛形
 
 ## 使い方
 
-### 1. gollum と omnigolum をインストール
-### 2. 環境にあわせて ldap.yaml と gollum.yaml を編集
+### 1. bundle install
 
-```sh
-$ cp ldap.yaml.example ldap.yaml
-$ cp gollum.yaml.example gollum.yaml
+```
+$ git clone https://github.com/moqada/omnigollum_site.git
+$ cd omnigollum_site
+$ bundle install
 ```
 
-### 3. rackup
+### 2. 環境にあわせて config.ru, gollum.yaml を編集
 
-OR unicorn x nginx
+```sh
+$ cp gollum.yaml.example gollum.yaml
+$ cp config.ru.example config.ru
+```
+
+そのまんま conrig.ru を利用すれば LDAP 用
+
+### 3. 起動
+
+#### Rack
+
+```sh
+$ bundle exec rackup
+```
+
+#### Unicorn
+
+```sh
+$ cp unicorn.rb.example unicorn.rb
+$ bundle exec unicorn -c unicorn.rb
+```
 
 
 ## 備考
