@@ -1,3 +1,10 @@
-gollum_path: /home/gollum/gollum/lib
-omnigollum_path: /home/gollum/omnigollum/lib
 base_path: /home/gollum/wiki
+omniauth:
+    ldap:
+        host: 127.0.0.1
+        port: 389
+        method: plain
+        base: "dc=examle,dc=com"
+        uid: uid
+        bind_dn: "cn=manager,dc=example,dc=com"
+        password: 'password'

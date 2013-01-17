@@ -1,5 +1,8 @@
 *.swp
+.bundle
 tmp
 log
-ldap.yaml
+config.ru
 gollum.yaml
+unicorn.rb
+Gemfile.lock
