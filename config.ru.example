@@ -10,7 +10,7 @@ data_path = File.dirname(__FILE__)
 config = YAML.load(open(data_path + "/gollum.yaml"))
 
 Precious::App.set(:gollum_path, config['base_path'])
-Precious::App.set(:wiki_options, {})
+Precious::App.set(:wiki_options, config['wiki_options'])
 
 options = {
   # OmniAuth::Builder block is passed as a proc
