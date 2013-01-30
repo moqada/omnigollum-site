@@ -1,10 +1,10 @@
 base_path: /home/gollum/wiki
 wiki_options:
-    show_all: true
-    collapse_tree: true
-    mathjax: true
-    h1_title: true
-    user_icons: 'gravatar'
+    !ruby/sym show_all: true
+    !ruby/sym collapse_tree: true
+    !ruby/sym mathjax: true
+    !ruby/sym h1_title: true
+    !ruby/sym user_icons: 'gravatar'
 omniauth:
     ldap:
         host: 127.0.0.1
