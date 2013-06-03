@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'gollum'
-gem 'omnigollum',   git: 'https://github.com/moqada/omnigollum.git', ref: '8f8de54614a792307715c7f5fd200184556aad84'
+gem 'omnigollum',   git: 'https://github.com/arr2036/omnigollum.git'
 
 # Auth
 gem 'omniauth-ldap'

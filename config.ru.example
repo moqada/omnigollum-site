@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'yaml'
 require 'gollum'
-require 'gollum/frontend/app'
+require 'gollum/app'
 require 'omnigollum'
 # for LDAP auth
 require 'omniauth-ldap'
